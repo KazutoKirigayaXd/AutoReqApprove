@@ -39,13 +39,17 @@
     "OWNER_ID": {
       "description": "Enter Bot Owner ID",
       "required": true,
-    }
-        
+    }    
   },
-  
-    "buildpacks": [
+  "buildpacks": [
         {
             "url": "heroku/python"
         }
-    ]
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
