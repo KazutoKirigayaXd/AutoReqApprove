@@ -1,0 +1,51 @@
+{
+    "name": "Automatic Request Approve Bot",
+    "description": "Automatic approve Telegram Group/Channel join requests bot.",
+    "keywords": [
+        "Bot",
+        "Telegram ",
+        "Pyrogram "
+    ],
+    
+    "repository": "https://github.com/KazutoKirigayaXd/AutoReqApprove",
+    "logo":"https://telegra.ph/file/e6299d404bb6397a73600.jpg",   
+    
+    "env": {
+    "API_ID": {
+      "description": "Enter your API_ID, get it from my.telegram.org/apps",
+      "required": false,
+      "value":""
+    },
+    "API_HASH": {
+      "description": "Enter your API_HASH, get it from my.telegram.org/apps",
+      "required": false
+    },
+    "MONGO": {
+        "description": "mongo db url",
+        "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Enter your Bot token, get it from @BotFather",
+      "required": true
+    },
+    "CHANNEL": {
+      "description": "Enter your Force Subscribe channel Username without @",
+      "required": false,
+    },
+    "FSUB": {
+      "description": "True For Enabling Else False",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Enter Bot Owner ID",
+      "required": true,
+    }
+        
+  },
+  
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
