@@ -52,10 +52,11 @@ async def start(app: Client, msg: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(f"Aᴅᴅ {app.me.first_name}", url=f"https://t.me/{app.me.username}?startgroup=true")
+                        InlineKeyboardButton(f"Add {app.me.first_name}", url=f"https://t.me/{app.me.username}?startgroup=true"),
                     ],
                     [
-                        InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"https://t.me/SupremeXNetwork")
+                        InlineKeyboardButton("Channel", url=f"https://t.me/SupremeXNetwork"),
+                        InlineKeyboardButton("Group", url=f"https://t.me/AquaMarineSN"),
                     ],
                 ]
             )
